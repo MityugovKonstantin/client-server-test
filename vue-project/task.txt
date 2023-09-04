@@ -1,0 +1,2 @@
+ky вместо axios
+async await вместо callback-ов
