@@ -22,7 +22,7 @@ onMounted(() => getAll());
 <div class="flex-container">
   <ul class="list" v-if="books.length != 0">
     <li class="field" v-for="book in books" :key="book.id">
-      <router-link to="/book">{{ book.author + ', ' + book.name }}</router-link>
+      <router-link :to="'/book/' + book.id">{{ book.author + ', ' + book.name }}</router-link>
     </li>
   </ul>
 </div>

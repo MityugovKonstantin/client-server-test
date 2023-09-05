@@ -15,7 +15,7 @@ const booksRoutes = [
         component: () => import('./components/books/Books.vue')
     },
     {
-        path: "/book",
+        path: "/book/:id",
         name: "book",
         component: () => import("./components/books/Book.vue")
     }
